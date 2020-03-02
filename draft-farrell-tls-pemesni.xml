@@ -77,13 +77,16 @@
             ESNI key pairs, just as was done with <xref target="RFC7468"/>. 
         </t>
 
-        <t>[[This idea could: a) wither on the vine, b) be published
-            as it's own RFC, or c) end up as a PR for <xref target="I-D.ietf-tls-esni"/>.
+        <t>[[This idea could: a) wither on the vine
+                              b) be published as it's own RFC
+                              c) end up as a PR for <xref target="I-D.ietf-tls-esni"/>.
+          
             There is no absolute need for this to be in the RFC that
             defines ESNI, so (b) seems feasible if there's enough
             interest, hence this draft.
-            The source for this is in https://github.com/sftcd/pemesni/ 
-            PRs are welcome there too.]]
+            
+            The source for this is available at https://github.com/sftcd/pemesni 
+            where PRs are welcome.]]
         </t>
 
       </section>
@@ -109,9 +112,9 @@
               <t>There MUST only be one key pair in each file even if a server publishes
                   multiple public keys in one ESNIKeys structure.</t>
 
-              <t><xref target="sample"/> shows an example ESNI PEM File</t>
+              <t><xref target="sample"/> shows an example ESNI PEM File.</t>
 
-            <figure anchor="sample" title="Example ESNI PEM file" >
+            <figure anchor="sample" title="Exemplar ESNI PEM file" >
             <artwork><![CDATA[
 -----BEGIN PRIVATE KEY-----
 MC4CAQAwBQYDK2VuBCIEIEDyEDpfvLoFYQi4rNjAxAz7F/Dqydv5IFmcPpIyGNd8
@@ -129,17 +132,13 @@ TwAAAABdlBoPAAA=
 
     <section title="Security Considerations">
         <t>Storing cryptographic keys in files leaves them vulnerable should
-            anyone get shell access to the TLS server machine.
-            So: Don't let that happen:-)</t>
+            anyone get shell access to the TLS server machine. The keys, therefore,
+            SHOULD NOT be stored insecurely.</t>
 
     </section>
 
     <section title="Acknowledgements">
-        <t>TBD, as needed</t>
-    </section>
-
-    <section title="IANA Considerations">
-        <t>There are none so this section can be deleted later.</t>
+        <t>TBD as needed.</t>
     </section>
 
   </middle>
