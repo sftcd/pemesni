@@ -1,6 +1,6 @@
 # pemesni
 
-Specify the wee bit of format stuff needed to make/use PEM files for Encrypted SNI.
+Specify the wee bit of format stuff needed to make/use PEM files for Encrypted ClientHello (ECH).
 
 This might or might not be integrated into the 
 [ESNI specification](https://tools.ietf.org/html/draft-ietf-tls-esni)
