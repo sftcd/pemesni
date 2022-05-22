@@ -17,7 +17,7 @@
 <?rfc rfcedstyle="yes"?>
 <?rfc comments="yes"?>
 <?rfc inline="yes"?>
-<rfc category="exp" docName="draft-farrell-tls-pemesni-02" ipr="trust200902" >
+<rfc category="exp" docName="draft-farrell-tls-pemesni-03" ipr="trust200902" >
   <front>
     <title abbrev="PEM file format for ECH">PEM file format for ECH</title>
 
@@ -43,7 +43,7 @@
       </address>
     </author>
 
-    <date year="2021"/>
+    <date year="2022"/>
 
     <area>Security Area</area>
 
@@ -54,9 +54,9 @@
     <keyword>ESNI</keyword>
 
     <abstract>
-        <t>Encrypted ClientHello (ECH) key pairs need to be configured into TLS servers, some of which
-            can be built with different TLS libraries, so there is a benefit and
-            little cost in documenting a file format to use for these, similar to
+        <t>Encrypted ClientHello (ECH) key pairs need to be configured into TLS servers, that
+            can be built using different TLS libraries, so there is a benefit and
+            little cost in documenting a file format to use for these key pairs, similar to
             how RFC7468 defines other PEM file formats.
             </t> 
     </abstract>
@@ -81,11 +81,9 @@
             ECH key pairs, just as was done with <xref target="RFC7468"/>. 
         </t>
 
-        <t>[[This idea could: a) wither on the vine, b) be published
-            as it's own RFC, or c) end up as a PR for <xref target="I-D.ietf-tls-esni"/>.
-            There is no absolute need for this to be in the RFC that
-            defines ECHO, so (b) seems feasible if there's enough
-            interest, hence this draft.
+        <t>[[At present, based on TLS WG list discussion, it seems most likely
+            that this draft will be sent to the Independent stream once ECH is
+            done and dusted (but not before). 
             The source for this is in https://github.com/sftcd/pemesni/ 
             PRs are welcome there too.]]
         </t>
@@ -177,6 +175,11 @@ AQALZXhhbXBsZS5jb20AAA==
 
     <section title="Changes">
 
+      <t>From -02 to -03:
+        <list style="symbols">
+            <t>Refresh due to expiry and not possible ISE destination</t>
+        </list>
+      </t>
       <t>From -01 to -02:
           <list style="symbols">
             <t>ECHO -> ECH</t>
