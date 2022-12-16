@@ -17,7 +17,7 @@
 <?rfc rfcedstyle="yes"?>
 <?rfc comments="yes"?>
 <?rfc inline="yes"?>
-<rfc category="exp" docName="draft-farrell-tls-pemesni-03" ipr="trust200902" >
+<rfc category="exp" docName="draft-farrell-tls-pemesni-04" ipr="trust200902" >
   <front>
     <title abbrev="PEM file format for ECH">PEM file format for ECH</title>
 
@@ -175,6 +175,11 @@ AQALZXhhbXBsZS5jb20AAA==
 
     <section title="Changes">
 
+      <t>From -03 to -04:
+        <list style="symbols">
+            <t>Refresh due to expiry.</t>
+        </list>
+      </t>
       <t>From -02 to -03:
         <list style="symbols">
             <t>Refresh due to expiry and not possible ISE destination</t>
