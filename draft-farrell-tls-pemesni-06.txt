@@ -4,8 +4,8 @@
 
 TLS                                                           S. Farrell
 Internet-Draft                                    Trinity College Dublin
-Intended status: Experimental                           December 4, 2023
-Expires: June 6, 2024
+Intended status: Experimental                            4 December 2023
+Expires: 6 June 2024
 
 
                         PEM file format for ECH
@@ -34,7 +34,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on June 6, 2024.
+   This Internet-Draft will expire on 6 June 2024.
 
 Copyright Notice
 
@@ -42,18 +42,18 @@ Copyright Notice
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
-   Provisions Relating to IETF Documents
-   (https://trustee.ietf.org/license-info) in effect on the date of
-   publication of this document.  Please review these documents
-   carefully, as they describe your rights and restrictions with respect
-   to this document.  Code Components extracted from this document must
-   include Simplified BSD License text as described in Section 4.e of
-   the Trust Legal Provisions and are provided without warranty as
-   described in the Simplified BSD License.
+   Provisions Relating to IETF Documents (https://trustee.ietf.org/
+   license-info) in effect on the date of publication of this document.
+   Please review these documents carefully, as they describe your rights
+   and restrictions with respect to this document.  Code Components
+   extracted from this document must include Revised BSD License text as
+   described in Section 4.e of the Trust Legal Provisions and are
+   provided without warranty as described in the Revised BSD License.
 
 
 
-Farrell                   Expires June 6, 2024                  [Page 1]
+
+Farrell                    Expires 6 June 2024                  [Page 1]
 
 Internet-Draft           PEM file format for ECH           December 2023
 
@@ -67,8 +67,8 @@ Table of Contents
    5.  Acknowledgements  . . . . . . . . . . . . . . . . . . . . . .   3
    6.  IANA Considerations . . . . . . . . . . . . . . . . . . . . .   3
    7.  Normative References  . . . . . . . . . . . . . . . . . . . .   3
-   Appendix A.  Changes  . . . . . . . . . . . . . . . . . . . . . .   5
-   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .   5
+   Appendix A.  Changes  . . . . . . . . . . . . . . . . . . . . . .   4
+   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .   4
 
 1.  Introduction
 
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Farrell                   Expires June 6, 2024                  [Page 2]
+Farrell                    Expires 6 June 2024                  [Page 2]
 
 Internet-Draft           PEM file format for ECH           December 2023
 
@@ -131,7 +131,7 @@ Internet-Draft           PEM file format for ECH           December 2023
    AQALZXhhbXBsZS5jb20AAA==
    -----END ECHCONFIG-----
 
-                   Figure 1: Example ECHConfig PEM file
+                    Figure 1: Example ECHConfig PEM file
 
 4.  Security Considerations
 
@@ -149,34 +149,6 @@ Internet-Draft           PEM file format for ECH           December 2023
 
 7.  Normative References
 
-   [I-D.ietf-dnsop-svcb-https]
-              Schwartz, B., Bishop, M., and E. Nygren, "Service binding
-              and parameter specification via the DNS (DNS SVCB and
-              HTTPS RRs)", draft-ietf-dnsop-svcb-https-12 (work in
-              progress), March 2023,
-              <https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-
-              svcb-https-12>.
-
-
-
-
-
-
-
-
-
-Farrell                   Expires June 6, 2024                  [Page 3]
-
-Internet-Draft           PEM file format for ECH           December 2023
-
-
-   [I-D.ietf-tls-esni]
-              Rescorla, E., Oku, K., Sullivan, N., and C. Wood, "TLS
-              Encrypted Client Hello", draft-ietf-tls-esni-17 (work in
-              progress), October 2023,
-              <https://datatracker.ietf.org/doc/html/draft-ietf-tls-
-              esni-17>.
-
    [RFC2119]  Bradner, S., "Key words for use in RFCs to Indicate
               Requirement Levels", BCP 14, RFC 2119,
               DOI 10.17487/RFC2119, March 1997,
@@ -190,77 +162,77 @@ Internet-Draft           PEM file format for ECH           December 2023
               2119 Key Words", BCP 14, RFC 8174, DOI 10.17487/RFC8174,
               May 2017, <https://www.rfc-editor.org/info/rfc8174>.
 
+
+
+
+Farrell                    Expires 6 June 2024                  [Page 3]
+
+Internet-Draft           PEM file format for ECH           December 2023
+
+
    [RFC8446]  Rescorla, E., "The Transport Layer Security (TLS) Protocol
               Version 1.3", RFC 8446, DOI 10.17487/RFC8446, August 2018,
               <https://www.rfc-editor.org/info/rfc8446>.
 
+   [I-D.ietf-tls-esni]
+              Rescorla, E., Oku, K., Sullivan, N., and C. A. Wood, "TLS
+              Encrypted Client Hello", Work in Progress, Internet-Draft,
+              draft-ietf-tls-esni-17, 9 October 2023,
+              <https://datatracker.ietf.org/doc/html/draft-ietf-tls-
+              esni-17>.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Farrell                   Expires June 6, 2024                  [Page 4]
-
-Internet-Draft           PEM file format for ECH           December 2023
-
+   [I-D.ietf-dnsop-svcb-https]
+              Schwartz, B. M., Bishop, M., and E. Nygren, "Service
+              binding and parameter specification via the DNS (DNS SVCB
+              and HTTPS RRs)", Work in Progress, Internet-Draft, draft-
+              ietf-dnsop-svcb-https-12, 11 March 2023,
+              <https://datatracker.ietf.org/doc/html/draft-ietf-dnsop-
+              svcb-https-12>.
 
 Appendix A.  Changes
 
    From -05 to -06:
 
-   o  Refresh due to expiry.
+   *  Refresh due to expiry.
 
    From -04 to -05:
 
-   o  Refresh due to expiry.
+   *  Refresh due to expiry.
 
    From -03 to -04:
 
-   o  Refresh due to expiry.
+   *  Refresh due to expiry.
 
    From -02 to -03:
 
-   o  Refresh due to expiry and not possible ISE destination
+   *  Refresh due to expiry and not possible ISE destination
 
    From -01 to -02:
 
-   o  ECHO -> ECH
+   *  ECHO -> ECH
 
    From -00 to -01:
 
-   o  ESNI -> ECHO
+   *  ESNI -> ECHO
 
 Author's Address
 
+
+
+
+
+Farrell                    Expires 6 June 2024                  [Page 4]
+
+Internet-Draft           PEM file format for ECH           December 2023
+
+
    Stephen Farrell
    Trinity College Dublin
-   Dublin  2
+   Dublin
+   2
    Ireland
-
    Phone: +353-1-896-2354
-   EMail: stephen.farrell@cs.tcd.ie
+   Email: stephen.farrell@cs.tcd.ie
 
 
 
@@ -277,4 +249,32 @@ Author's Address
 
 
 
-Farrell                   Expires June 6, 2024                  [Page 5]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Farrell                    Expires 6 June 2024                  [Page 5]
