@@ -101,7 +101,7 @@
       <section title="ECHConfig file">
 
               <t>The public and private keys MUST both
-                  be PEM encoded. The file contains the catenation of the PEM encoding
+                  be PEM encoded. The file contains the concatenation of the PEM encoding
               of the private key followed by the PEM encoding of the public key as
               an ECHConfigList containing exactly one ECHConfig. 
                   The private key MUST be encoded as a PKCS#8 PrivateKey. The public
