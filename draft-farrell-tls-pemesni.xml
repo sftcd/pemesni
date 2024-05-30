@@ -78,7 +78,7 @@
             TLS servers then need to be configured to use these key pairs, 
             and given that various TLS servers can be built with different
             TLS libraries, there is a benefit in having a standard format for
-            ECH key pairs, just as was done with <xref target="RFC7468"/>. 
+            ECH key pairs and configs, just as was done with <xref target="RFC7468"/>. 
         </t>
 
         <t>[[At present, based on TLS WG list discussion, it seems most likely
