@@ -132,8 +132,11 @@ AQALZXhhbXBsZS5jb20AAA==
 
     <section title="Security Considerations">
         <t>Storing cryptographic keys in files leaves them vulnerable should
-            anyone get shell access to the TLS server machine.
-            So: Don't let that happen:-)</t>
+            anyone get read access to the filesystem on which they are stored.
+            The same protection mechanims that would be used for a server's PEM 
+            encoded HTTPS certificate private key should be used for the PEM ECH 
+            configuration.
+            </t>
 
     </section>
 
