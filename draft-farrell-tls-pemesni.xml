@@ -17,7 +17,7 @@
 <?rfc rfcedstyle="yes"?>
 <?rfc comments="yes"?>
 <?rfc inline="yes"?>
-<rfc category="exp" docName="draft-farrell-tls-pemesni-06" ipr="trust200902" >
+<rfc category="exp" docName="draft-farrell-tls-pemesni-07" ipr="trust200902" >
   <front>
     <title abbrev="PEM file format for ECH">PEM file format for ECH</title>
 
@@ -43,7 +43,7 @@
       </address>
     </author>
 
-    <date year="2023"/>
+    <date year="2024"/>
 
     <area>Security Area</area>
 
@@ -175,6 +175,11 @@ AQALZXhhbXBsZS5jb20AAA==
 
     <section title="Changes">
 
+      <t>From -06 to -07:
+        <list style="symbols">
+            <t>Refresh due to expiry.</t>
+        </list>
+      </t>
       <t>From -05 to -06:
         <list style="symbols">
             <t>Refresh due to expiry.</t>
