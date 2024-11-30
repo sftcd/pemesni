@@ -100,10 +100,12 @@
 
       <section title="ECHConfig file">
 
+          <t>A PEM ECH file contains zero or one private key and one encoded ECHConfigList.</t>
+
               <t>The public and private keys MUST both
                   be PEM encoded. The file contains the concatenation of the PEM encoding
-              of the private key followed by the PEM encoding of the public key as
-              an ECHConfigList containing exactly one ECHConfig. 
+              of the private key (if present) followed by the PEM encoding of the public key as
+              an ECHConfigList containing one ECHConfig that matches the private key. 
                   The private key MUST be encoded as a PKCS#8 PrivateKey. The public
                   key MUST be the base64 encoded form of an ECHConfigList value that 
                   can also be published in the DNS. The string "ECHCONFIG" MUST be used in the PEM
