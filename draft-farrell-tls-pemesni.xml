@@ -17,7 +17,7 @@
 <?rfc rfcedstyle="yes"?>
 <?rfc comments="yes"?>
 <?rfc inline="yes"?>
-<rfc category="exp" docName="draft-farrell-tls-pemesni-08" ipr="trust200902" >
+<rfc category="exp" docName="draft-farrell-tls-pemesni-09" ipr="trust200902" >
   <front>
     <title abbrev="PEM file format for ECH">PEM file format for ECH</title>
 
@@ -43,7 +43,7 @@
       </address>
     </author>
 
-    <date year="2024"/>
+    <date year="2025"/>
 
     <area>Security Area</area>
 
@@ -105,7 +105,7 @@
               <t>The public and private keys MUST both
                   be PEM encoded. The file contains the concatenation of the PEM encoding
               of the private key (if present) followed by the PEM encoding of the public key as
-              an ECHConfigList containing one ECHConfig that matches the private key. 
+              an ECHConfigList containing an ECHConfig that matches the private key. 
                   The private key MUST be encoded as a PKCS#8 PrivateKey. The public
                   key MUST be the base64 encoded form of an ECHConfigList value that 
                   can also be published in the DNS. The string "ECHCONFIG" MUST be used in the PEM
@@ -113,6 +113,8 @@
 
               <t>There MUST only be one key pair in each file even if a server publishes
                   multiple public keys in the DNS in one ECHConfigList structure.</t>
+
+              <t>An content after the PEM encoded ECHConfigList SHOULD be ignored.</t>
 
               <t><xref target="sample"/> shows an example ECHConfig PEM File</t>
 
@@ -180,6 +182,12 @@ AQALZXhhbXBsZS5jb20AAA==
 
     <section title="Changes">
 
+      <t>From -08 to -09:
+        <list style="symbols">
+            <t>Minor clarificatrion of encoding based on current 
+                OpenSSL ECH feature branch code.</t>
+        </list>
+      </t>
       <t>From -07 to -08:
         <list style="symbols">
             <t>Processed some github comments</t>
