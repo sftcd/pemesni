@@ -17,7 +17,7 @@
 <?rfc rfcedstyle="yes"?>
 <?rfc comments="yes"?>
 <?rfc inline="yes"?>
-<rfc category="exp" docName="draft-farrell-tls-pemesni-10" ipr="trust200902" >
+<rfc category="std" docName="draft-farrell-tls-pemesni-11" ipr="trust200902" >
   <front>
     <title abbrev="PEM file format for ECH">PEM file format for ECH</title>
 
@@ -47,7 +47,7 @@
 
     <area>Security Area</area>
 
-    <workgroup>TLS</workgroup>
+    <workgroup>Internet Engineering Task Force (IETF)</workgroup>
 
     <keyword>TLS</keyword>
 
@@ -150,18 +150,18 @@ AQALZXhhbXBsZS5jb20AAA==
   <back>
     <references title="Normative References">
       <?rfc include='reference.RFC.2119'?>
-      <?rfc include='reference.RFC.7468'?>
       <?rfc include='reference.RFC.8174'?>
       <?rfc include='reference.RFC.8446'?>
-      <?rfc include='reference.RFC.9460'?>
       &I-D.ietf-tls-esni;
 
     </references>
 
-    <!--
     <references title="Informative References">
+      <?rfc include='reference.RFC.7468'?>
+      <?rfc include='reference.RFC.9460'?>
     </references>
 
+    <!--
     <section title="Change Log ">
       <t>[[RFC editor: please remove this before publication.]]</t>
 
@@ -175,6 +175,11 @@ AQALZXhhbXBsZS5jb20AAA==
 
     <section title="Changes">
 
+      <t>From -10 to -11:
+        <list style="symbols">
+            <t>Change to standards track as agreed with shepherd/AD.</t>
+        </list>
+      </t>
       <t>From -09 to -10:
         <list style="symbols">
             <t>Tweaks to fit being AD sponsored.</t>

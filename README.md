@@ -2,9 +2,7 @@
 
 Specify the wee bit of format stuff needed to make/use PEM files for Encrypted ClientHello (ECH).
 
-This might or might not be integrated into the 
-[ECH specification](https://tools.ietf.org/html/draft-ietf-tls-esni)
-at some stage, we'll see, but probably not.
+This is being processed in the IETF as an AD sponsored draft.
 
 The [current draft](draft-farrell-tls-pemesni.txt).
 
