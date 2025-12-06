@@ -158,6 +158,12 @@ AQALZXhhbXBsZS5jb20AAA==
                 the security considerations of <xref target="I-D.ietf-tls-svcb-ech"/>.
             </t>
 
+            <t>
+                For clarity, only the ECHConfigList is to be pubslished
+                in the DNS - the private key from an ECH PEM file MUST
+                NOT be pubslished in the DNS.
+            </t>
+
     </section>
 
     <section title="Acknowledgements">
