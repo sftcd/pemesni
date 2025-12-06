@@ -14,9 +14,9 @@ Expires: June 9, 2026
 Abstract
 
    Encrypted ClientHello (ECH) key pairs need to be configured into TLS
-   servers, that can be built using different TLS libraries, so there is
-   a benefit and little cost in documenting a file format to use for
-   these key pairs, similar to how RFC7468 defines other PEM file
+   servers, which can be built using different TLS libraries, so there
+   is a benefit and little cost in documenting a file format to use for
+   these key pairs, similar to how RFC 7468 defines other PEM file
    formats.
 
 Status of This Memo
@@ -102,10 +102,10 @@ Table of Contents
 
    The public and private keys MUST both be PEM encoded.  The file
    contains the concatenation of the PEM encoding of the private key (if
-   present) followed by the PEM encoding of the public key as an
+   present) followed by the PEM encoding of the public key(s) as an
    ECHConfigList containing an ECHConfig that matches the private key.
    The private key MUST be encoded as a PKCS#8 PrivateKey.  The public
-   key MUST be the base64 encoded form of an ECHConfigList value that
+   key(s) MUST be the base64 encoded form of an ECHConfigList value that
 
 
 
@@ -139,9 +139,9 @@ Internet-Draft           PEM file format for ECH           December 2025
    If the above ECHConfigList were published in the DNS for
    foo.example.com, then one could access that as shown in Figure 2.
 
-$ dig +short HTTPS foo.example.com
-1 . ech=AD7+DQA65wAgACA8wVN2BtscOl3vQheUzHeIkVmKIiydUhDCliA4iyQRCwAEAAEA
-AQALZXhhbXBsZS5jb20AAA==
+   $ dig +short HTTPS foo.example.com
+   1 . ech=AD7+DQA65wAgACA8wVN2BtscOl3vQheUzHeIkVmKIiydUhDCliA4iyQR
+   wAEAAEAAQALZXhhbXBsZS5jb20AAA==
 
           Figure 2: Use of dig to get the ECHConfigList from DNS
 

@@ -55,10 +55,10 @@
     <keyword>ESNI</keyword>
 
     <abstract>
-        <t>Encrypted ClientHello (ECH) key pairs need to be configured into TLS servers, that
+        <t>Encrypted ClientHello (ECH) key pairs need to be configured into TLS servers, which
             can be built using different TLS libraries, so there is a benefit and
             little cost in documenting a file format to use for these key pairs, similar to
-            how RFC7468 defines other PEM file formats.
+            how RFC 7468 defines other PEM file formats.
             </t>
     </abstract>
   </front>
@@ -98,10 +98,10 @@
 
               <t>The public and private keys MUST both
               be PEM encoded. The file contains the concatenation of the PEM encoding
-              of the private key (if present) followed by the PEM encoding of the public key as
+              of the private key (if present) followed by the PEM encoding of the public key(s) as
               an ECHConfigList containing an ECHConfig that matches the private key.
                   The private key MUST be encoded as a PKCS#8 PrivateKey. The public
-                  key MUST be the base64 encoded form of an ECHConfigList value that
+                  key(s) MUST be the base64 encoded form of an ECHConfigList value that
                   can be published in the DNS using an HTTPS RR as described in
               <xref target="I-D.ietf-tls-svcb-ech"/>.
               The string "ECHCONFIG" MUST be used in the PEM
@@ -135,8 +135,8 @@ AQALZXhhbXBsZS5jb20AAA==
             <figure anchor="dig" title="Use of dig to get the ECHConfigList from DNS" >
             <artwork><![CDATA[
 $ dig +short HTTPS foo.example.com
-1 . ech=AD7+DQA65wAgACA8wVN2BtscOl3vQheUzHeIkVmKIiydUhDCliA4iyQRCwAEAAEA
-AQALZXhhbXBsZS5jb20AAA==
+1 . ech=AD7+DQA65wAgACA8wVN2BtscOl3vQheUzHeIkVmKIiydUhDCliA4iyQR
+wAEAAEAAQALZXhhbXBsZS5jb20AAA==
             ]]></artwork>
             </figure>
 
