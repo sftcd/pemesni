@@ -222,7 +222,7 @@ AQALZXhhbXBsZS5jb20AAA==
       </t>
       <t>From -08 to -09:
         <list style="symbols">
-            <t>Minor clarificatrion of encoding based on current
+            <t>Minor clarification of encoding based on current
                 OpenSSL ECH feature branch code.</t>
         </list>
       </t>
