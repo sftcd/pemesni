@@ -4,8 +4,8 @@
 
 Internet Engineering Task Force (IETF)                        S. Farrell
 Internet-Draft                                    Trinity College Dublin
-Intended status: Standards Track                        December 6, 2025
-Expires: June 9, 2026
+Intended status: Standards Track                        December 8, 2025
+Expires: June 11, 2026
 
 
                         PEM file format for ECH
@@ -34,7 +34,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on June 9, 2026.
+   This Internet-Draft will expire on June 11, 2026.
 
 Copyright Notice
 
@@ -53,7 +53,7 @@ Copyright Notice
 
 
 
-Farrell                   Expires June 9, 2026                  [Page 1]
+Farrell                   Expires June 11, 2026                 [Page 1]
 
 Internet-Draft           PEM file format for ECH           December 2025
 
@@ -109,7 +109,7 @@ Table of Contents
 
 
 
-Farrell                   Expires June 9, 2026                  [Page 2]
+Farrell                   Expires June 11, 2026                 [Page 2]
 
 Internet-Draft           PEM file format for ECH           December 2025
 
@@ -165,14 +165,14 @@ Internet-Draft           PEM file format for ECH           December 2025
 
 
 
-Farrell                   Expires June 9, 2026                  [Page 3]
+Farrell                   Expires June 11, 2026                 [Page 3]
 
 Internet-Draft           PEM file format for ECH           December 2025
 
 
 5.  Acknowledgements
 
-   Thanks to Daniel McCarney and Jim Reid for comments.
+   Thanks to Daniel McCarney, Jim Reid and Peter Yee for comments.
 
 6.  IANA Considerations
 
@@ -221,7 +221,7 @@ Internet-Draft           PEM file format for ECH           December 2025
 
 
 
-Farrell                   Expires June 9, 2026                  [Page 4]
+Farrell                   Expires June 11, 2026                 [Page 4]
 
 Internet-Draft           PEM file format for ECH           December 2025
 
@@ -277,7 +277,7 @@ Internet-Draft           PEM file format for ECH           December 2025
 
 
 
-Farrell                   Expires June 9, 2026                  [Page 5]
+Farrell                   Expires June 11, 2026                 [Page 5]
 
 Internet-Draft           PEM file format for ECH           December 2025
 
@@ -298,7 +298,7 @@ Appendix A.  Changes
 
    From -08 to -09:
 
-   o  Minor clarificatrion of encoding based on current OpenSSL ECH
+   o  Minor clarification of encoding based on current OpenSSL ECH
       feature branch code.
 
    From -07 to -08:
@@ -333,7 +333,7 @@ Appendix A.  Changes
 
 
 
-Farrell                   Expires June 9, 2026                  [Page 6]
+Farrell                   Expires June 11, 2026                 [Page 6]
 
 Internet-Draft           PEM file format for ECH           December 2025
 
@@ -389,4 +389,4 @@ Author's Address
 
 
 
-Farrell                   Expires June 9, 2026                  [Page 7]
+Farrell                   Expires June 11, 2026                 [Page 7]
