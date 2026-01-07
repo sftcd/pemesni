@@ -4,8 +4,8 @@
 
 Internet Engineering Task Force (IETF)                        S. Farrell
 Internet-Draft                                    Trinity College Dublin
-Intended status: Standards Track                        December 8, 2025
-Expires: June 11, 2026
+Intended status: Standards Track                         January 7, 2026
+Expires: July 11, 2026
 
 
                         PEM file format for ECH
@@ -34,11 +34,11 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on June 11, 2026.
+   This Internet-Draft will expire on July 11, 2026.
 
 Copyright Notice
 
-   Copyright (c) 2025 IETF Trust and the persons identified as the
+   Copyright (c) 2026 IETF Trust and the persons identified as the
    document authors.  All rights reserved.
 
    This document is subject to BCP 78 and the IETF Trust's Legal
@@ -53,9 +53,9 @@ Copyright Notice
 
 
 
-Farrell                   Expires June 11, 2026                 [Page 1]
+Farrell                   Expires July 11, 2026                 [Page 1]
 
-Internet-Draft           PEM file format for ECH           December 2025
+Internet-Draft           PEM file format for ECH            January 2026
 
 
 Table of Contents
@@ -103,24 +103,21 @@ Table of Contents
    The public and private keys MUST both be PEM encoded.  The file
    contains the concatenation of the PEM encoding of the private key (if
    present) followed by the PEM encoding of the public key(s) as an
-   ECHConfigList containing an ECHConfig that matches the private key.
-   The private key MUST be encoded as a PKCS#8 PrivateKey.  The public
-   key(s) MUST be the base64 encoded form of an ECHConfigList value that
+   ECHConfigList.  When a private key is present, the ECHConfigList MUST
+   contain an ECHConfig that matches the private key.  The private key
+   MUST be encoded as a PKCS#8 PrivateKey.  The public key(s) MUST be
 
 
 
-Farrell                   Expires June 11, 2026                 [Page 2]
+Farrell                   Expires July 11, 2026                 [Page 2]
 
-Internet-Draft           PEM file format for ECH           December 2025
+Internet-Draft           PEM file format for ECH            January 2026
 
 
-   can be published in the DNS using an HTTPS RR as described in
+   the base64 encoded form of an ECHConfigList value that can be
+   published in the DNS using an HTTPS RR as described in
    [I-D.ietf-tls-svcb-ech].  The string "ECHCONFIG" MUST be used in the
    PEM file delimiter for the public key.
-
-   There MUST only be one key pair in each file even if a server
-   publishes multiple public keys in the DNS in one ECHConfigList
-   structure.
 
    Any content after the PEM encoded ECHConfigList SHOULD be ignored.
 
@@ -145,6 +142,18 @@ Internet-Draft           PEM file format for ECH           December 2025
 
           Figure 2: Use of dig to get the ECHConfigList from DNS
 
+   TLS servers using this file format might configure multiple file
+   names as part of their overall configuration, if, for example, only
+   the ECHConfigList values from a subset of those files are to be used
+   as the value for retry_configs in the ECH fallback scenario.
+
+   The ECHConfigList in a PEM file might contain more than one ECHConfig
+   if, for example, those ECHConfig values contain different extensions
+   or different public_name values.  If the ECHConfigList value is to be
+   use as the retry_configs value, then that might contain different
+   public keys.  (Nonetheless, when a private key is present, that MUST
+   match the public key from one of the ECHConfig values.)
+
 4.  Security Considerations
 
    Storing cryptographic keys in files leaves them vulnerable should
@@ -153,22 +162,20 @@ Internet-Draft           PEM file format for ECH           December 2025
    encoded HTTPS certificate private key should be used for the PEM ECH
    configuration.
 
-   Retrieval of the ECHConfigList from DNS is more secure if the zone
-   publishing the HTTPS RR uses DNSSEC.  See also the security
-   considerations of [I-D.ietf-tls-svcb-ech].
-
-   For clarity, only the ECHConfigList is to be pubslished in the DNS -
-   the private key from an ECH PEM file MUST NOT be pubslished in the
-   DNS.
 
 
 
-
-
-Farrell                   Expires June 11, 2026                 [Page 3]
+Farrell                   Expires July 11, 2026                 [Page 3]
 
-Internet-Draft           PEM file format for ECH           December 2025
+Internet-Draft           PEM file format for ECH            January 2026
 
+
+   The security considerations of [I-D.ietf-tls-svcb-ech] apply when
+   retrieving an ECHConfigList from the DNS.
+
+   For clarity, only the ECHConfigList is to be published in the DNS -
+   the private key from an ECH PEM file MUST NOT be published in the
+   DNS.
 
 5.  Acknowledgements
 
@@ -211,20 +218,17 @@ Internet-Draft           PEM file format for ECH           December 2025
               <https://datatracker.ietf.org/doc/html/draft-ietf-tls-
               svcb-ech-08>.
 
+
+
+
+Farrell                   Expires July 11, 2026                 [Page 4]
+
+Internet-Draft           PEM file format for ECH            January 2026
+
+
    [RFC7468]  Josefsson, S. and S. Leonard, "Textual Encodings of PKIX,
               PKCS, and CMS Structures", RFC 7468, DOI 10.17487/RFC7468,
               April 2015, <https://www.rfc-editor.org/info/rfc7468>.
-
-
-
-
-
-
-
-Farrell                   Expires June 11, 2026                 [Page 4]
-
-Internet-Draft           PEM file format for ECH           December 2025
-
 
    [RFC9460]  Schwartz, B., Bishop, M., and E. Nygren, "Service Binding
               and Parameter Specification via the DNS (SVCB and HTTPS
@@ -273,20 +277,16 @@ Internet-Draft           PEM file format for ECH           December 2025
 
 
 
-
-
-
-
-Farrell                   Expires June 11, 2026                 [Page 5]
+Farrell                   Expires July 11, 2026                 [Page 5]
 
-Internet-Draft           PEM file format for ECH           December 2025
+Internet-Draft           PEM file format for ECH            January 2026
 
 
 Appendix A.  Changes
 
    From -11 to -12:
 
-   o  Changes resulting from dnsdir review.
+   o  Changes resulting from IETF last call reviews.
 
    From -10 to -11:
 
@@ -333,9 +333,9 @@ Appendix A.  Changes
 
 
 
-Farrell                   Expires June 11, 2026                 [Page 6]
+Farrell                   Expires July 11, 2026                 [Page 6]
 
-Internet-Draft           PEM file format for ECH           December 2025
+Internet-Draft           PEM file format for ECH            January 2026
 
 
    o  ESNI -> ECHO
@@ -389,4 +389,4 @@ Author's Address
 
 
 
-Farrell                   Expires June 11, 2026                 [Page 7]
+Farrell                   Expires July 11, 2026                 [Page 7]
