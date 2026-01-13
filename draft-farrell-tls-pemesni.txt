@@ -100,7 +100,7 @@ Table of Contents
    A PEM ECH file contains zero or one private key and one encoded
    ECHConfigList.
 
-   The public and private keys MUST both be PEM encoded.  [RFC7468] The
+   The public and private keys MUST both be PEM encoded [RFC7468].  The
    file contains the concatenation of the PEM encoding of the private
    key (if present) followed by the PEM encoding of the public key(s) as
    an ECHConfigList.  When a private key is present, the ECHConfigList

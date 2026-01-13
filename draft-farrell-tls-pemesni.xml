@@ -99,7 +99,7 @@
           <t>A PEM ECH file contains zero or one private key and one encoded ECHConfigList.</t>
 
               <t>The public and private keys MUST both
-              be PEM encoded. <xref target="RFC7468"/>
+              be PEM encoded <xref target="RFC7468"/>.
               The file contains the concatenation of the PEM encoding
               of the private key (if present) followed by the PEM encoding of the public key(s) as
               an ECHConfigList.
