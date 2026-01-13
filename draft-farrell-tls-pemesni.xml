@@ -104,7 +104,7 @@
               of the private key (if present) followed by the PEM encoding of the public key(s) as
               an ECHConfigList.
               When a private key is present, the ECHConfigList MUST contain an ECHConfig that matches the private key.
-              The private key MUST be encoded as a PKCS#8 PrivateKey. <xref target="RFC7468"/>
+              The private key MUST be encoded as a PKCS#8 PrivateKey <xref target="RFC7468"/>.
               The public
               key(s) MUST be the base64 encoded (see Section 4 of <xref target="RFC4648"/>) form of an ECHConfigList value that
                   can be published in the DNS using an HTTPS RR as described in
