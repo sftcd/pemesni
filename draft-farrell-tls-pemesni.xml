@@ -56,12 +56,14 @@
     <keyword>ESNI</keyword>
 
     <abstract>
-        <t>Encrypted ClientHello (ECH) key pairs need to be configured into TLS servers, which
-            can be built using different TLS libraries, so there is a benefit and
-            little cost in documenting a file format to use for these key pairs, similar to
-            how RFC 7468 defines other PEM file formats. This document specifies 
-            the format required.
-            </t>
+
+        <t>
+            Encrypted ClientHello (ECH) key pairs need to be configured into TLS
+            servers, which can be built using different TLS libraries.
+            This document specifies This document specifies a file format to use,
+            similar to how RFC 7468 defines other PEM file formats.
+        </t>
+
     </abstract>
   </front>
 
