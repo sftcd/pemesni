@@ -154,9 +154,12 @@ wAEAAEAAQALZXhhbXBsZS5jb20AAA==
 
             <t>
                 The ECHConfigList in a PEM file might contain more than one
-                ECHConfig if, for example, those ECHConfig values contain different
-                extensions or different public_name values. If the
-                ECHConfigList value is to be use as the retry_configs value,
+                ECHConfig if, for example, those ECHConfig values contain
+                different extensions or different public_name
+                values. Consistent with <xref target="I-D.ietf-tls-esni"/>,
+                the ECHConfig values within an ECHConfigList appear in
+                decreasing order of preference. If the
+                ECHConfigList value is to be used as the retry_configs value,
                 then that might contain different public keys. (Nonetheless,
                 when a private key is present, that MUST match the public key
                 from one of the ECHConfig values.)
